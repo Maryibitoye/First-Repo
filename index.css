@@ -1,3 +1,7 @@
+body {
+  margin: 0px;
+  cursor: pointer;
+}
 img {
   height: 200px;
   border-radius: 50%;
@@ -11,18 +15,26 @@ p {
 .navlink {
   color: black;
   cursor: url(./image/arrow-cursor-outline.png), pointer;
+  text-decoration: none;
+  margin-left: 4px;
+  text-transform: capitalize;
+}
+.navlink:hover {
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+.nav {
+  height: 55px;
+  margin-bottom: 10px
 }
 p,
 h1,
 a {
-  color: green;
+  margin: 10px;margin-top: 45px;
+  color: black;
 }
-body {
-  margin: 0px;
-  border: 10px solid black;
-  padding: 50px;
-  cursor: url("./image/arrow-cursor-outline.png"), pointer;
-}
+
 #estimate {
   border: 2px solid black;
   border-radius: 20px;
@@ -32,3 +44,31 @@ body {
   text-transform: uppercase;
   font-weight: 600;
 }
+#estimate:hover {
+  background-color: #fd4601;
+  color: white;
+}
+
+/* descendant combinator */
+/* .box p {
+  color: red;
+} */
+
+/* child combinator */
+
+.box > p {
+  color: blue;
+}
+.box + P {
+  color: green;
+  font-size: 3opx;
+}
+h2 {
+  color: black;
+}
+#text {
+  text-align: justify;
+  line-height: 40px;
+  word-spacing: 10px;
+}
+.
