@@ -10,15 +10,34 @@ p {
   color: rgb(111, 74, 245);
 }
 #navbar {
-  background-color: #ededed;
+  background-color: rgb(46, 138, 219);
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
 }
 .navlink {
   color: black;
   cursor: url(./image/arrow-cursor-outline.png), pointer;
   text-decoration: none;
-  margin-left: 4px;
   text-transform: capitalize;
 }
+.logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.right {
+  display: flex;
+  align-items: center;
+  gap: 8rem;
+
+
+}
+.right > div {
+  display: flex;
+  gap: 20px;
+}
+
 .navlink:hover {
   text-decoration: underline;
   font-weight: 600;
@@ -26,12 +45,12 @@ p {
 
 .nav {
   height: 55px;
-  margin-bottom: 10px
+  margin-bottom: 10px;
 }
 p,
-h1,
-a {
-  margin: 10px;margin-top: 45px;
+h1 {
+  margin: 10px;
+  margin-top: 45px;
   color: black;
 }
 
@@ -71,4 +90,43 @@ h2 {
   line-height: 40px;
   word-spacing: 10px;
 }
-.
+.box1 {
+  background-color: red;
+  height: 3rem;
+  width: 3rem;
+  /* display: inline-block; */
+}
+
+.box2 {
+  background-color: yellow;
+  height: 3rem;
+  width: 3rem;
+  /* display: none; */
+  /* display: inline-block; */
+}
+.box3 {
+  background-color: blue;
+  height: 4rem;
+  width: 3rem;
+  /* display: inline-block; */
+}
+.flexbox {
+  background-color: #fd4601;
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  width: 30vw;
+  justify-content: space-evenly;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: nowrap;
+}
+.flexbox1 {
+  display: flex;
+  flex-direction: column;
+  background-color: green;
+  height: 100vh;
+  justify-content: end;
+  align-items: center;
+}
